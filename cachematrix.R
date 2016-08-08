@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## Write a short comment describing this function
+## makeCacheMatrix create matrix object that can cache its inverse
+## Example input: test_matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
+##                test_matrix$get()
+
 
 makeCacheMatrix <- function(x = matrix()) {
 
