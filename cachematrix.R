@@ -1,5 +1,5 @@
 
-## makeCacheMatrix create matrix object that can cache its inverse
+## makeCacheMatrix create special matrix object that can cache its inverse
 ## Example input: test_matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
 ##                test_matrix$get()
 
@@ -23,7 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve calculate the inverse of the special matrix created with makeCacheMatrix
+## Example input: cacheSolve(test_matrix)
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
